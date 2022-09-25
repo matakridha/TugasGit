@@ -10,6 +10,8 @@ function love.load()
 
     -- app window title
     love.window.setTitle('TugasGit')
+
+    push:setupScreen(WINDOW_HEIGHT,WINDOW_WIDTH)
 end
 
 function love.update()
