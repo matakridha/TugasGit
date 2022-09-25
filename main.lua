@@ -11,7 +11,11 @@ function love.load()
     -- app window title
     love.window.setTitle('TugasGit')
 
-    push:setupScreen(WINDOW_HEIGHT,WINDOW_WIDTH)
+    push:setupScreen(WINDOW_HEIGHT,WINDOW_WIDTH,{
+        vsync = true,
+        fullscreen = false
+    }
+)
 end
 
 function love.update()
@@ -19,5 +23,6 @@ function love.update()
 end
 
 function love.draw()
-    
+    push:start()
+    love.graphics.draw(background, -backgroundScroll,0)
 end
