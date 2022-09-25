@@ -19,7 +19,7 @@ function love.load()
 end
 
 function love.update()
-    
+    love.keyboard.keysPressed = {}
 end
 
 function love.draw()
